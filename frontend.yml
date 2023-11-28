@@ -7,7 +7,7 @@
        name: nginx
        state: present
 
-    - name: placing expense config file in nginx
+    - name: copy expense config file
       ansible.builtin.copy:
         src: expense.conf
         dest: /etc/nginx/default.d/expense.con
