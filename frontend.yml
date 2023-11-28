@@ -20,7 +20,7 @@
     - name: add directory for nginx contents
       ansible.builtin.file:
         path: /usr/share/nginx/html/
-        state: absent
+        state: directory
 
 
     - name: Download and extract frontend contents
