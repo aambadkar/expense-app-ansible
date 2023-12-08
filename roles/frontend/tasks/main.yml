@@ -11,7 +11,7 @@
 - name: include app pre-requisite
   ansible.builtin.import_role:
     name: common
-    task_from: app_prereq
+    tasks_from: app_prereq
 
 - name: Restart nginx service
   ansible.builtin.systemd:
